@@ -1,0 +1,20 @@
+stream = "alpha-777-XYZ-9.8462"
+print("=== WELCOME TO THE SECRET CODE BREAKER ===")
+print('Your secret data stream is: '+stream)
+print('--- STEP 1: COUNT THE CLUES ---')
+guess=int(input('Guess how many times "777" appear: '))
+actual=stream.count('777')
+a=guess==actual
+print('Is your count correct?: '+str(a))
+print('--- STEP 2: EXTRACT THE CODE ---')
+start_index=int(input('enter the start index: '))
+end_index=int(input('enter the end index: '))
+extracted=stream[start_index:end_index]
+print('Successfully extracted: '+extracted)
+print('--- STEP 3: DECRYPT THE MULTIPLIER ---')
+x=float(input('enter the floating number from string: '))
+float_number=round(x,2)
+print('Rounded secret multiplier is: '+str(float_number))
+print('--- FINAL LOG IN ---')
+name=input('Enter ur full agent name: ')
+print(f'Welcome {name}! \nYour final code key is {extracted}-{float_number}')

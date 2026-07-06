@@ -1,0 +1,17 @@
+print('WELCOME TO BMI CALCULATOR'+'\nFOLLOW AND ANSWER THE GIVEN QUESTIONS')
+height=float(input('ENTER UR HEIGHT IN METRES: '))
+weight=float(input('ENTER UR WEIGHT IN KILOGRAMS: '))
+bmi=weight/(height**2)
+if(bmi<18.5):
+    print(f'UR BMI IS {bmi} .UR UNDERWEIGHT, GOT A LOT TO GAIN')
+elif(bmi<25):
+    print(f'UR BMI IS {bmi} .UR NORMAL WEIGHT, PERFECTO! ')
+elif(bmi<30):
+    print(f'UR BMI IS {bmi} .UR OVERWEIGHT, A SLIGHT WORKOUT WILL DO')
+elif(bmi<35):
+    print(f'UR BMI IS {bmi} .UR OBESE CLASS 1, A ROUTINOUS EXERCISE IS ADVISED')
+elif(bmi<40):
+    print(f'UR BMIS IS {bmi} .UR OBESE CLASS 2, A VERY VERY VIGOROUS EXERCISE IS ADVISED')
+else:
+    print(f'UR BMI IS {bmi} .UR OBESE CLASS 3, HIGHLY FATAL')
+print('THANK YOU FOR USING OUR BMI CALCULATOR!!'+'\nNEVER LOSE HOPE,STAY HEALTHY!!!')
