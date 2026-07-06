@@ -7,7 +7,7 @@ if(a<=2):
     elif(a==1):
         print('YOU PLAYED PAPER')
     else:
-        print('YOU PLAYED SCISSORS')  #general
+        print('YOU PLAYED SCISSORS')  
     import random
     b=random.randint(0,2)
     if(b==0):
